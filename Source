@@ -5,57 +5,61 @@
             <title>Findy</title>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=League+Spartan:wght@500&display=swap');
-              </style>
+            </style>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
         </head>
-<body>
-    <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 119 119" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M59.5 94.2083C78.6689 94.2083 94.2084 78.6689 94.2084 59.5C94.2084 40.3311 78.6689 24.7917 59.5 24.7917C40.3311 24.7917 24.7917 40.3311 24.7917 59.5C24.7917 78.6689 40.3311 94.2083 59.5 94.2083ZM50.0286 36.634C53.0314 35.3902 56.2498 34.75 59.5 34.75C60.8807 34.75 62 33.6307 62 32.25C62 30.8693 60.8807 29.75 59.5 29.75C55.5932 29.75 51.7246 30.5195 48.1152 32.0146C44.5058 33.5097 41.2261 35.701 38.4636 38.4636C35.701 41.2261 33.5097 44.5057 32.0146 48.1152C30.5195 51.7246 29.75 55.5932 29.75 59.5C29.75 60.8807 30.8693 62 32.25 62C33.6307 62 34.75 60.8807 34.75 59.5C34.75 56.2498 35.3902 53.0314 36.634 50.0286C37.8778 47.0258 39.7009 44.2973 41.9991 41.9991C44.2974 39.7008 47.0258 37.8778 50.0286 36.634Z" fill="#93A7D8"/>
-            <path d="M106.25 111.208L84.2917 84.2917" stroke="#AB6D6D" stroke-width="10" stroke-linecap="round"/>
-            <circle cx="54.5417" cy="54.5417" r="39.625" stroke="#766DAD" stroke-width="10"/>
-        </svg>
-        <label class="logotext">Findy</label>
+    <body>
+        <div class="logo ms-3 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 119 119" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.5 94.2083C78.6689 94.2083 94.2084 78.6689 94.2084 59.5C94.2084 40.3311 78.6689 24.7917 59.5 24.7917C40.3311 24.7917 24.7917 40.3311 24.7917 59.5C24.7917 78.6689 40.3311 94.2083 59.5 94.2083ZM50.0286 36.634C53.0314 35.3902 56.2498 34.75 59.5 34.75C60.8807 34.75 62 33.6307 62 32.25C62 30.8693 60.8807 29.75 59.5 29.75C55.5932 29.75 51.7246 30.5195 48.1152 32.0146C44.5058 33.5097 41.2261 35.701 38.4636 38.4636C35.701 41.2261 33.5097 44.5057 32.0146 48.1152C30.5195 51.7246 29.75 55.5932 29.75 59.5C29.75 60.8807 30.8693 62 32.25 62C33.6307 62 34.75 60.8807 34.75 59.5C34.75 56.2498 35.3902 53.0314 36.634 50.0286C37.8778 47.0258 39.7009 44.2973 41.9991 41.9991C44.2974 39.7008 47.0258 37.8778 50.0286 36.634Z" fill="#93A7D8"/>
+                <path d="M106.25 111.208L84.2917 84.2917" stroke="#AB6D6D" stroke-width="10" stroke-linecap="round"/>
+                <circle cx="54.5417" cy="54.5417" r="39.625" stroke="#766DAD" stroke-width="10"/>
+            </svg>
+            <label class="base-style logotext">Findy</label>
+        </div>
         <div class="container">
-            <div class="card">
-                    <form class="form">
-                        <div class="pt-3">
-                            <label class="searchLabel">Find My Music!</label>
-                            <input class="searchBox" type="text"/>
-                        </div>
-                        <div class="pt-3" style="padding-left: 25%; padding-right: 25%;">
-                            <button type="button" class="searchButton">Search</button>
-                        </div>
-                    </form>
+            <div class="mt-5" style="width: 45%;">
+                <form>
+                    <div class="pt-3">
+                        <label class="base-style searchLabel">Find My Music!</label>
+                        <input class="base-style searchBox" type="text" id="searchbox"/>
+                    </div>
+                    <div class="pt-3" style="padding-left: 25%; padding-right: 25%;">
+                        <button type="button" class="base-style searchButton" onclick="searchText()">Search</button>
+                    </div>
+                </form>
+                <div class="pt-5">
+                    <div class="table-wrapper">
+                        <table class="table table-striped table-borderless table-hover custom-table">
+                            <tbody>
+                                <tr style="text-align: center;">
+                                    <td><img src="placeholder.jpg" width="50px" height="50px"></td>
+                                    <td class="base-style text-2 pt-3">Placeholder</td>
+                                    <td class="base-style text-2 pt-3">Placeholder</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="content-1" style="width: 45%;">
+                <div class="content-wrapper">
+                    <img src="placeholder.jpg" width="70%" id="coverMain">
+                    <label class="base-style text-1 pt-3" id="trackInfo">Placeholder - Placeholder</label>
+                    <label class="base-style text-1 pt-2" id="album">Placeholder</label>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <table style="padding-left: 1%;">
-                <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
-                </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                </tr>
-              </table>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
 
 <style>
     html, body {
         height: 100%;
         margin: 0;
+        overflow: hidden;
     }
 
     body {
@@ -67,53 +71,50 @@
     }
 
     .container {
-        padding-top: 3%;
-        width: 40%;
-        margin-left: 5%;
-        border: 10px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
     }
 
-    .form {
+    .content-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .logotext {
+
+    .base-style {
         color: #FFF;
         font-family: Kanit;
-        font-size: 32px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        padding-top: 1%;
         user-select: none;
+    }
+
+    .logotext {
+        font-size: 32px;
     }
 
     .searchLabel {
         width: 500px;
         height: 60px;
         flex-shrink: 0;
-
-        color: #FFF;
-        font-family: Kanit;
         font-size: 2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     .searchBox {
         width: 100%;
         height: 50px;
         flex-shrink: 0;
-
-        color: #FFF;
-        font-family: Kanit;
         font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
         border-radius: 20px;
         background: #6A6ED6;
     }
@@ -122,56 +123,79 @@
         width: 100%;
         height: 54px;
         flex-shrink: 0;
-
+        font-size: 1.5rem;
         border-radius: 25px;
         background: #54A42F;
-
-        color: #FFF;
-        font-family: Kanit;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
-    .pt-3 {
-        padding-top: 3%;
+    .text-1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .text-2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    tr {
+        background-color: #5659B1;
+    }
+
+    .table-wrapper {
+        max-height: 250px;
+        overflow-y: auto;
+        background: linear-gradient(90deg, rgba(52, 53, 82, 0.90) 0%, rgba(52, 53, 82, 0.70) 100%);
+    }
+
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #474978;
+        border-radius: 30px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
     }
 
 </style>
 
 <script>
-    // function searchText() {
-    //     var searchInput = document.getElementById('searchbox').value;
-    //     fetch('https://spotify23.p.rapidapi.com/search/?q='+searchInput+'&type=multi&offset=0&limit=10&numberOfTopResults=5', {
-    //     method: 'GET',
-    //     headers: {
-    //         'X-RapidAPI-Key': 'ad3ec5a369mshf5f01f7b784ff09p1a3634jsnf1989bcc621e',
-    //         'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-    //     }
-    // })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //         displayTrackInfo(data);
-    //     })
-    //     .catch(error => console.error(error));
+    function searchText() {
+    var searchInput = document.getElementById('searchbox').value;
+    fetch('https://spotify23.p.rapidapi.com/search/?q=' + searchInput + '&type=multi&offset=0&limit=10&numberOfTopResults=1', {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'ad3ec5a369mshf5f01f7b784ff09p1a3634jsnf1989bcc621e',
+            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        displayTrackInfo(data);
+    })
+    .catch(error => console.error(error));
+}
 
-    // function displayTrackInfo(data) {
-    //     const trackData = data.albums.items[0].data;
+function displayTrackInfo(data) {
+    const trackData = data.albums.items[0].data;
 
-    //     const title = trackData.name;
-    //     const artists = trackData.artists.items.map(artist => artist.profile.name).join(', ');
-    //     const album = trackData.name;
-    //     const coverArtUrl = trackData.coverArt.sources[0].url;
+    const title = trackData.name;
+    const artists = trackData.artists.items.map(artist => artist.profile.name).join(', ');
+    const album = trackData.name;
+    const coverArtUrl = trackData.coverArt.sources[0].url;
 
-    //     const trackInfoElement = document.getElementById('track-info');
-    //     trackInfoElement.innerHTML = `
-    //         <img src="${coverArtUrl}" alt="Cover Art" width="150" height="150">
-    //         <p>Title: ${title}</p>
-    //         <p>Artist: ${artists}</p>
-    //         <p>Album: ${album}</p>
-    //     `;
-    //     }
-    // }
+    const coverMain = document.getElementById('coverMain');
+    const coverTandA = document.getElementById('trackInfo');
+    const coverAlbum = document.getElementById('album');
+
+    coverMain.setAttribute('src', coverArtUrl);
+    coverTandA.textContent = artists + ' - ' + title;
+    coverAlbum.textContent = album;
+}
 </script>
