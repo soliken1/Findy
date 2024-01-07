@@ -32,9 +32,9 @@
                 </form>
                 <div class="pt-5">
                     <div class="table-wrapper">
-                        <table class="table table-striped table-borderless table-hover custom-table">
+                        <table class="table table-striped table-borderless table-hover custom-table" id="table">
                             <tbody>
-                                <tr style="text-align: center;">
+                                <tr>
                                     <td><img src="placeholder.jpg" width="50px" height="50px"></td>
                                     <td class="base-style text-2 pt-3">Placeholder</td>
                                     <td class="base-style text-2 pt-3">Placeholder</td> 
@@ -52,6 +52,41 @@
                 </div>
             </div>
         </div>
+        <svg class="object-1" xmlns="http://www.w3.org/2000/svg" width="165" height="125" viewBox="0 0 165 125" fill="none">
+            <path d="M222 19.5C222 74.6667 173.773 120 113.5 120C53.2266 120 5 74.6667 5 19.5C5 -35.6667 53.2266 -81 113.5 -81C173.773 -81 222 -35.6667 222 19.5Z" stroke="#7B4040" stroke-opacity="0.5" stroke-width="10"/>
+          </svg>
+          <svg class="object-2" xmlns="http://www.w3.org/2000/svg" width="171" height="142" viewBox="0 0 171 142" fill="none">
+            <path d="M166 105.5C166 160.667 117.773 206 57.5 206C-2.77335 206 -51 160.667 -51 105.5C-51 50.3333 -2.77335 5 57.5 5C117.773 5 166 50.3333 166 105.5Z" stroke="#7B4040" stroke-opacity="0.5" stroke-width="10"/>
+          </svg>
+          <svg class="object-3" xmlns="http://www.w3.org/2000/svg" width="41" height="48" viewBox="0 0 41 48" fill="none">
+            <path d="M1.96748 5.26059L34.0973 14.78L20.3268 45.3303" stroke="#D8C51E" stroke-opacity="0.25" stroke-width="10"/>
+          </svg>
+          <svg class="object-4" xmlns="http://www.w3.org/2000/svg" width="41" height="51" viewBox="0 0 41 51" fill="none">
+            <path d="M37.9344 45.5281L7.78812 30.8943L26.3582 3" stroke="#D81EC5" stroke-opacity="0.25" stroke-width="10"/>
+          </svg>
+          <svg class="object-5" xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42" fill="none">
+            <path d="M4.92987 40.0766L12.4217 7.41446L43.7732 19.2477" stroke="#1ED8B6" stroke-opacity="0.25" stroke-width="10"/>
+          </svg>
+          <svg class="object-6" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M1.00002 9.54966L34.3162 5.94779L33.3868 39.4453" stroke="#1ED8B6" stroke-opacity="0.25" stroke-width="10"/>
+          </svg>
+          <svg class="object-7" xmlns="http://www.w3.org/2000/svg" width="50" height="41" viewBox="0 0 50 41" fill="none">
+            <path d="M46.733 15.676L17.95 32.8364L4.83296 1.99999" stroke="#D8C51E" stroke-opacity="0.25" stroke-width="10"/>
+          </svg>
+          <footer class="base-style">
+            <svg class="pe-1" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512">
+            <path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 
+            8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9
+            2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2
+            6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5
+            -37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8
+            15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3
+            19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1
+            2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5
+            15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/>
+            </svg>
+            Spotify API Utilized
+        </footer>
     </body>
 </html>
 
@@ -64,6 +99,12 @@
 
     body {
         background: linear-gradient(180deg, #101245 45.46%, #5B1F65 110.79%);
+    }
+
+    footer {
+        position: absolute;
+        bottom: 2px;
+        right: 3px;
     }
 
     .logo {
@@ -88,7 +129,6 @@
         flex-direction: column;
         align-items: center;
     }
-
 
     .base-style {
         color: #FFF;
@@ -140,6 +180,7 @@
 
     tr {
         background-color: #5659B1;
+        text-align: center;
     }
 
     .table-wrapper {
@@ -162,12 +203,66 @@
         border-collapse: collapse;
     }
 
+    .object-1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .object-2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+    }
+
+    .object-3 {
+        position: absolute;
+        left: 500px;
+        bottom: 500px;
+        z-index: -1;
+
+    }
+
+    .object-4 {
+        position: absolute;
+        right: 100px;
+        bottom: 350px;
+        z-index: -1;
+
+    }
+
+    .object-5 {
+        position: absolute;
+        right: 300px;
+        bottom: 40px;
+        z-index: -1;
+
+    }
+
+    .object-6 {
+        position: absolute;
+        left: 150px;
+        bottom: 300px;
+        z-index: -1;
+
+    }
+
+    .object-7 {
+        position: absolute;
+        left: 500px;
+        bottom: 100px;
+        z-index: -1;
+
+    }
 </style>
 
 <script>
     function searchText() {
     var searchInput = document.getElementById('searchbox').value;
-    fetch('https://spotify23.p.rapidapi.com/search/?q=' + searchInput + '&type=multi&offset=0&limit=10&numberOfTopResults=1', {
+    fetch('https://spotify23.p.rapidapi.com/search/?q=' + searchInput + '&type=multi&offset=0&limit=10&numberOfTopResults=3', {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'ad3ec5a369mshf5f01f7b784ff09p1a3634jsnf1989bcc621e',
@@ -183,8 +278,41 @@
 }
 
 function displayTrackInfo(data) {
-    const trackData = data.albums.items[0].data;
+    const tableBody = document.getElementById('table').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = "";
 
+    data.albums.items.forEach((item, index) => {
+        const title = item.data.name;
+        const artists = item.data.artists.items.map(artist => artist.profile.name).join(', ');
+        const album = item.data.name;
+        const coverArtUrl = item.data.coverArt.sources[0].url;
+
+        const newRow = tableBody.insertRow();
+
+        const coverCell = newRow.insertCell(0);
+        const titleCell = newRow.insertCell(1);
+        const albumCell = newRow.insertCell(2);
+
+        const imgElement = document.createElement('img');
+        imgElement.src = coverArtUrl;
+        imgElement.width = 50;
+        imgElement.height = 50;
+        coverCell.appendChild(imgElement);
+
+        titleCell.textContent = title;
+        albumCell.textContent = album;
+
+        newRow.addEventListener('click', function () {
+            updateMainElements(item.data);
+        });
+    });
+
+    if (data.albums.items.length > 0) {
+        updateMainElements(data.albums.items[0].data);
+    }
+}
+
+function updateMainElements(trackData) {
     const title = trackData.name;
     const artists = trackData.artists.items.map(artist => artist.profile.name).join(', ');
     const album = trackData.name;
